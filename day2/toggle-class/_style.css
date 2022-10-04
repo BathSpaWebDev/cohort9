@@ -1,0 +1,14 @@
+#custom-body.dark-mode {
+    background:#444;
+}
+
+.hero {
+    padding: 4rem 0;
+    display: flex;
+    justify-content: center;
+    background-color: coral;
+}
+
+#custom-body.dark-mode .hero { 
+    background-color: blueviolet;
+}

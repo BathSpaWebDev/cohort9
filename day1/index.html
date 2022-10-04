@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>TEST PAGE</h1>
+
+    <p id="demo"></p>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque, fugit eligendi! Voluptate, ea asperiores. Optio, et. Enim consequuntur mollitia possimus? Labore quisquam culpa similique temporibus voluptate minima, libero rem rerum.</p>
+
+    <script>
+        //this is a car object
+        // const car = {
+        //     make: 'Ferrari',
+        //     model: 'F40',
+        //     number_doors: 2 
+        // }
+
+        // const person = {
+        //     first_name: 'Tom',
+        //     last_name: 'Jones'
+        // }
+
+        // document.getElementById('demo').innerHTML = person.first_name + ' ' + person.last_name;
+
+        const x = 'Bob';
+
+        function Person(first, last, faveFruits) {
+            this.firstName = x;
+            this.lastName = last;
+            this.favouriteFruits = faveFruits;
+        }
+
+
+        const person1 = new Person('Tom');
+        const person2 = new Person('Laura', 'Jones');
+
+        let text = "";
+        text += person1.lastName + ' ' + person2.lastName;
+        text += person2.firstName + ' ' + person2.lastName;
+
+        // document.getElementById('demo').innerHTML = text;
+
+        // console.log(document.getElementById('demo').style);
+
+
+
+        // An array is a special type of object that holds a collection of values.
+
+        const fruits = [
+            'apple', // index is 0
+            'orange', // index is 1
+            'cherry'  // index is 2
+        ];
+
+        // console.log(fruits[2]);
+
+        fruits.push('pineapple');
+        console.log(fruits);
+
+        // const person3 = new Person('Roberto', 'Mancini', fruits);
+
+        // console.log(person3);
+
+        function determineLetters(array) {
+            const result = array.map(function(item, i){
+                return item + ' has ' + item.length + ' letters';
+            })
+            return result;
+        }
+
+        console.log( determineLetters(fruits) );
+
+
+
+
+
+
+
+        /*
+        + 
+        - 
+        / 
+        += 
+        =
+        ==
+        ===
+
+
+
+
+
+Challenges
+
+1. Create two number variables.
+
+Add the two variables together.
+
+output the result.
+
+2. Add two numbers together and multiply by 5. Output the result.
+
+
+3. Concatenate two strings together and output the result. Make sure to include a space in between the different strings.
+
+4. Declare an empty variable called text.
+
+Add a new word to the string using the += operator.
+
+Do the same again but with a different word
+
+Finally output the text variable.
+
+
+5. Create an if statement comparing two numbers, if they match alert ‘It works’.
+
+Use alert().
+
+*/
+        
+    </script>
+    
+</body>
+</html>
